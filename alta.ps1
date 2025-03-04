@@ -1,11 +1,11 @@
 # Definir la URL de la API
-$apiUrl = "http://localhost:8000/api/zteko"
+$apiUrl = "http://localhost/api/zteko"
 
 # Definir los datos del dispositivo a crear
 $deviceData = @{
     ip          = "10.35.2.120"
     port        = 4565
-    description = "Checador DPT"
+    description = "Dirección de Procesos Tecnológicos"
 } | ConvertTo-Json
 
 # Configurar los headers para la petición

@@ -20,6 +20,12 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+        host: '0.0.0.0', // Permite conexiones desde cualquier IP
+        hmr: {
+            host: '10.35.2.14' // Usa tu IP actual para HMR (Hot Module Replacement)
+        },
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './resources/js'),

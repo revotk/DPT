@@ -20,6 +20,16 @@ export default {
                 sm: 'calc(var(--radius) - 4px)',
             },
             colors: {
+                // Colores institucionales del INE
+                ine: {
+                    negro: '#000000',
+                    rosa: '#d5007f',
+                    gris: '#b2b2b2',
+                    'gris-claro': '#f5f5f5',
+                    vino: '#950054',
+                },
+
+                // Colores originales de la configuración
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
                 card: {
