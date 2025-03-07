@@ -218,7 +218,7 @@ class AttendanceSettingsController extends Controller
             'reason' => 'required|string',
             'type' => [
                 'required',
-                Rule::in(['personal', 'médico', 'vacaciones', 'capacitación', 'otro']),
+                Rule::in(['personal', 'médico', 'vacaciones', 'capacitación', 'otro', 'home office']),
             ],
             'start_time' => 'nullable|date_format:H:i',
             'end_time' => 'nullable|date_format:H:i|after:start_time',
@@ -269,7 +269,7 @@ class AttendanceSettingsController extends Controller
             'type' => [
                 'sometimes',
                 'required',
-                Rule::in(['personal', 'médico', 'vacaciones', 'capacitación', 'otro']),
+                Rule::in(['personal', 'médico', 'vacaciones', 'capacitación', 'otro', 'home office']),
             ],
             'start_time' => 'nullable|date_format:H:i',
             'end_time' => 'nullable|date_format:H:i|after:start_time',
@@ -323,7 +323,7 @@ class AttendanceSettingsController extends Controller
             'reason' => 'required|string',
             'type' => [
                 'required',
-                Rule::in(['personal', 'médico', 'vacaciones', 'capacitación', 'otro']),
+                Rule::in(['personal', 'médico', 'vacaciones', 'capacitación', 'otro', 'home office']),
             ],
             'approved_by' => 'nullable|string|max:255',
             'skip_weekends' => 'boolean',

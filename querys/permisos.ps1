@@ -126,13 +126,10 @@ function Create-BulkPermissions {
         $date = $row.date
         $reason = $row.reason
         $type = $row.type
-        $start_time = $row.start_time
-        $end_time = $row.end_time
-        $approved_by = $row.approved_by
-        Create-PermissionForDay -username $username -date $date -reason $reason -type $type -start_time $start_time -end_time $end_time -approved_by $approved_by
+        Write-Host "Creando permiso para '$username' en $date tipo $reason $type" -ForegroundColor Cyan
+        Create-PermissionForDay -username $username -date $date -reason $reason -type $type
     }
 }
-
 # Menú interactivo para seleccionar la funcionalidad
 function Show-Menu {
     Write-Host ""
