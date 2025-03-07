@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Zteko extends Model
 {
-    protected $table = 'zteko'; // Nombre de la tabla en la BD
+    protected $table = 'zteko';
 
     protected $fillable = [
         'ip',
